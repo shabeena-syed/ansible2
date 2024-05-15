@@ -1,6 +1,5 @@
 - name: variables declaration
   hosts: [web]
-  become: yes
   var: # variable declaration
    name1: "zara"
    name2: "sonu"

@@ -4,12 +4,16 @@
    name1: "zara"
    name2: "sonu"
   tasks:
-   - name: override variables
-      vars: #override information
+   - name: override information print
+     vars: # task level variables
        name: "zara"
      ansible.builtin.debug:
-      msg: " hi my name is "{{name1}}""
-           " helo my name is" {{name2}}""
+      msg: " hi my name is "{{name1}}.""
+          
+
+- name: print information
+  ansible.builtin.debug:
+    msg: "hi,my name is {{name1}}"           
 
   
 

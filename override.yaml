@@ -9,8 +9,8 @@
      vars: #override information
       name: "zara"
      ansible.builtin.debug:
-      msg:  " hi my name is {{name1}}"
-            " helo my name is {{name2}}"
+      msg: " hi my name is {{name1}}"
+           " helo my name is {{name2}}"
 
   
 

@@ -1,6 +1,5 @@
 - name: variables 
   hosts: [web]
-  become: yes
   vars: #variable declaration 
    course: "devops"
    name: "shivareddy"

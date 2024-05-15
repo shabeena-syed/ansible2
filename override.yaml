@@ -3,11 +3,11 @@
   var: # variable declaration
    name1: "zara"
   tasks:
-    - name: override information print
-      vars: # task level variables
+    - name: print information
+      vars: # declaration of variables
        name: "zara"
      ansible.builtin.debug:
-      msg: " hi my name is "{{name1}}"
+      msg: " hi my name is {{name1}}"
 
    
 

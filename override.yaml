@@ -1,24 +1,18 @@
 - name: variables
   hosts: [web]
   become: yes
-  var:
+  var: # variable declaration
    name1: "zara"
    name2: "sonu"
   tasks:
    - name: override variables
+     vars: #override information
+      name: "zara"
      ansible.builtin.debug:
       msg: "hi my name is {{name1}}"
             "helo my name is {{name2}}"
 
-  - name: variables
-    hosts: [local hosts]
-    var:
-     name1: "devops" 
-  tasks:
-   - name: printing msgs
-     ansible.builtin.debug:
-      msg: "hi my name is {{name1}}"
-            
+  
 
             
             

@@ -2,7 +2,6 @@
   hosts: [web]
   var: # variable declaration
    name1: "zara"
-   name2: "sonu"
   tasks:
    - name: override information print
      vars: # task level variables

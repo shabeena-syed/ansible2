@@ -1,4 +1,4 @@
-- name: variables
+- name: variables declaration
   hosts: [web]
   become: yes
   var: # variable declaration
@@ -6,8 +6,8 @@
    name2: "sonu"
   tasks:
    - name: override variables
-     vars: #override information
-      name: "zara"
+      vars: #override information
+       name: "zara"
      ansible.builtin.debug:
       msg:" hi my name is "{{name1}}""
            " helo my name is" {{name2}}""

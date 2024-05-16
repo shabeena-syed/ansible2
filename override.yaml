@@ -4,7 +4,7 @@
    Person1: "zara"
    Trainer: "shiva"
   tasks:
-    - name: print information
+    - name: information
       var: #task level information
        Person1: "sha"
       ansible.builtin.debug:

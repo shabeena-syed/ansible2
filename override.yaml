@@ -1,18 +1,18 @@
 - name: print information 
   hosts: localhost
   vars:  
-   person1: "zara"
+   Person1: "zara"
   tasks:
     - name: print information
       vars: #tasks
-       person1: "zara"
+       Person1: "zara"
       ansible.builtin.debug:
-        msg: " hi my name is {{person1}}"
+        msg: " hi my name is {{Person1}}"
 
    
     - name: print information
       ansible.builtin.debug:
-        msg: "my name is {{person1}}"
+        msg: "my name is {{Person1}}"
       
           
 

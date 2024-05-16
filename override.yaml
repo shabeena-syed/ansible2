@@ -1,16 +1,18 @@
-- name: variables declaration
+- name: variables 
   hosts: [web]
-  var: # variable declaration
+  vars:  
    name1: "zara"
   tasks:
     - name: print information
-      var: #tasks
+      vars: #tasks
        name: "zara"
       ansible.builtin.debug:
        msg: " hi my name is {{name1}}"
 
    
-
+    - name: print information
+      ansible.builtin.debug:
+        msg: "my name is {{name1}}"
       
           
 

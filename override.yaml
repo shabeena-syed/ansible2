@@ -5,6 +5,8 @@
    Trainer: "shiva"
   tasks:
     - name: print information
+      var: #task level information
+       Person1: "sha"
       ansible.builtin.debug:
         msg: " hi my name is {{Person1}}, my trainer is {{Trainer}}."
 

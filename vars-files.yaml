@@ -1,8 +1,8 @@
 - name: variables from files
   hosts: localhost
   vars_files:
-   - vars.yaml
+   - vars.yaml    
   tasks:
    - name: print ovverride information
      ansible.builtin.debug:
-      msg: "hi, i am learning {{course}}, from trainer {{Trainer}},duration {{time}}."
+      msg: "hi, i am learning {{Course}}, from trainer {{Trainer}},duration {{Time}}."

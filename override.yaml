@@ -7,11 +7,11 @@
     - name: information
       var: #task level information
        Person1: "sha"
-      ansible.builtin.debug:
+       ansible.builtin.debug:
         msg: " hi my name is {{Person1}}, my trainer is {{Trainer}}."
 
    
-    - name: print information
+    - name: trainer information
       ansible.builtin.debug:
         msg: "my name is {{Person1}}, my trainer is {{Trainer}}."
       

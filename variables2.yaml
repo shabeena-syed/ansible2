@@ -2,10 +2,10 @@
   hosts: [web]
   become: yes
   vars: #variable declaration 
-   course: "devops"
-   name: "shivareddy"
-   time: "100hrs"
+   Course: "devops"
+   Name: "shivareddy"
+   Time: "100hrs"
   tasks:
     - name: printing msgs
       ansible.builtin.debug:
-       msg: "hi,im learning {{course}},my trainer is {{name}},duration of course is {{time}}"
+       msg: "hi,im learning {{Course}},my trainer is {{Name}},duration of course is {{Time}}"

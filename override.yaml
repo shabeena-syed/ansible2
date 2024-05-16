@@ -5,9 +5,9 @@
   tasks:
     - name: print information
       vars: #tasks
-       name: "zara"
-      ansible.builtin.debug:
-       msg: " hi my name is {{name1}}"
+       name1: "zara"
+       ansible.builtin.debug:
+        msg: " hi my name is {{name1}}"
 
    
     - name: print information

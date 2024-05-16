@@ -4,14 +4,14 @@
    Person1: "zara"
    Trainer: "shiva"
   tasks:
-    - name: information
+    - name: print information
       vars: #task level information
        Person1: "sha"
        ansible.builtin.debug:
         msg: " hi my name is {{Person1}}, my trainer is {{Trainer}}."
 
    
-    - name: trainer information
+    - name: print information
       ansible.builtin.debug:
         msg: "my name is {{Person1}}, my trainer is {{Trainer}}."
       

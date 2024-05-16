@@ -4,6 +4,8 @@
    name1: "zara"
   tasks:
     - name: print information
+      var: #tasks
+       name: "zara"
       ansible.builtin.debug:
        msg: " hi my name is {{name1}}"
 
